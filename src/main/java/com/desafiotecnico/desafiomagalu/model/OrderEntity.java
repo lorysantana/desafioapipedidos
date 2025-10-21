@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 public class OrderEntity {
     @Id
     @Column(name = "order_id")
-    private Long orderId; // PK
+    private Long orderId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
